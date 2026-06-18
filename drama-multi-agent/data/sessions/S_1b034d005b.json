@@ -1,0 +1,17 @@
+{
+  "session_id": "S_1b034d005b",
+  "user_id": "alice",
+  "messages": [],
+  "profile": {
+    "preferred_style": "",
+    "preferred_topics": [],
+    "target_length_range": null,
+    "task_type_distribution": {},
+    "total_interactions": 0,
+    "last_interaction_ts": null,
+    "notes": ""
+  },
+  "reflections": [],
+  "created_ts": 1781663872.3896074,
+  "updated_ts": 1781663872.3896074
+}

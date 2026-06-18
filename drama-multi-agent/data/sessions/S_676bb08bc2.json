@@ -1,0 +1,28 @@
+{
+  "session_id": "S_676bb08bc2",
+  "user_id": "user_x_0",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi",
+      "ts": 1781663566.9682405
+    },
+    {
+      "role": "assistant",
+      "content": "hello",
+      "ts": 1781663566.9682405
+    }
+  ],
+  "profile": {
+    "preferred_style": "",
+    "preferred_topics": [],
+    "target_length_range": null,
+    "task_type_distribution": {},
+    "total_interactions": 0,
+    "last_interaction_ts": null,
+    "notes": ""
+  },
+  "reflections": [],
+  "created_ts": 1781663566.9651525,
+  "updated_ts": 1781663566.9682405
+}
