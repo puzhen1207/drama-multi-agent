@@ -67,7 +67,7 @@ pip install -r requirements.txt
 #    .env 已配置：LLM_API_KEY=sk-...
 
 # 3. 构建素材知识库（首次运行必做）
-set PYTHONPATH=src
+$env:PYTHONPATH="src"
 python scripts\build_knowledge.py
 
 # 4. 启动服务（含可视化前端页面）
@@ -80,7 +80,7 @@ python -m uvicorn drama_agent.api:app --host 0.0.0.0 --port 8000
 
 ```bash
 cd drama-multi-agent
-set PYTHONPATH=src
+$env:PYTHONPATH="src"
 python -m drama_agent run "写一段关于高考状元穿越古代的短剧开头"
 ```
 
