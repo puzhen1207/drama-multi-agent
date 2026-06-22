@@ -62,7 +62,7 @@ drama-multi-agent/
 需要 Python 3.10+。
 
 ```bash
-cd drama-multi-agent1
+cd drama-multi-agent
 python -m venv .venv
 # Windows 激活:
 .venv\Scripts\activate
