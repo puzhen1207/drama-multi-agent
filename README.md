@@ -59,22 +59,33 @@ drama-multi-agent/
 
 ### 方式一：直接运行（推荐，最快上手）
 
+需要 Python 3.10+。
+
 ```bash
-# 1. 安装依赖（Python 3.11+）
+cd drama-multi-agent1
+python -m venv .venv
+# Windows 激活:
+.venv\Scripts\activate
+# 或 Linux/macOS:
+source .venv/bin/activate
+
 pip install -r requirements.txt
 
-# 2. 配置 API Key（DeepSeek 已默认激活，可改 .env）
-#    .env 已配置：LLM_API_KEY=sk-...
-
-# 3. 构建素材知识库（首次运行必做）
-set PYTHONPATH=src
-python scripts\build_knowledge.py
-
-# 4. 启动服务（含可视化前端页面）
-python -m uvicorn drama_agent.api:app --host 0.0.0.0 --port 8000
-
-# 5. 浏览器打开：http://localhost:8000
+# 可选：把 .env.example 复制为 .env 后填入 LLM 配置
+cp .env.example .env
+# （未配置 LLM 时系统会自动进入本地 stub 模式，流程依然可跑通
+#  便于在 PyCharm/VSCode 里进行联调。)
+$env:PYTHONPATH="src"
+# 启动服务
+uvicorn drama_agent.api:app --host 127.0.0.1 --port 8000 --reload
+# 或直接：
+python -m drama_agent
 ```
+
+启动之后，浏览器打开：
+
+- 前台页面：http://127.0.0.1:8000/
+- Swagger 文档：http://127.0.0.1:8000/docs
 
 ### 方式二：命令行体验
 
