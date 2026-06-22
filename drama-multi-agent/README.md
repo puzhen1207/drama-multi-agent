@@ -75,7 +75,7 @@ pip install -r requirements.txt
 cp .env.example .env
 # （未配置 LLM 时系统会自动进入本地 stub 模式，流程依然可跑通
 #  便于在 PyCharm/VSCode 里进行联调。)
-
+$env:PYTHONPATH="src"
 # 启动服务
 uvicorn drama_agent.api:app --host 127.0.0.1 --port 8000 --reload
 # 或直接：
