@@ -102,7 +102,7 @@ cd drama-multi-agent
 如果项目已经在本地，例如：
 
 ```powershell
-cd /d D:\1求职\1\drama-multi-agent
+cd /d D:\1求职\1\drama-multi-agent（你自己的目录下）
 ```
 
 ### 2. 创建并激活虚拟环境
@@ -184,7 +184,7 @@ API_PORT=8000
 PowerShell：
 
 ```powershell
-cd /d D:\1求职\1\drama-multi-agent
+cd /d D:\1求职\1\drama-multi-agent（你自己的目录下）
 .\.venv\Scripts\Activate.ps1
 $env:PYTHONPATH = "src"
 python -m uvicorn drama_agent.api:app --host 127.0.0.1 --port 8001
@@ -193,7 +193,7 @@ python -m uvicorn drama_agent.api:app --host 127.0.0.1 --port 8001
 CMD：
 
 ```cmd
-cd /d D:\1求职\1\drama-multi-agent
+cd /d D:\1求职\1\drama-multi-agent（你自己的目录下）
 .venv\Scripts\activate
 set PYTHONPATH=src
 python -m uvicorn drama_agent.api:app --host 127.0.0.1 --port 8001
@@ -243,7 +243,7 @@ drama-agent mcp
 2. 解释器选择：
 
 ```text
-D:\1求职\1\drama-multi-agent\.venv\Scripts\python.exe
+D:\1求职\1\drama-multi-agent\.venv\Scripts\python.exe（你自己的目录下）
 ```
 
 1. 新建 Python 运行配置：
