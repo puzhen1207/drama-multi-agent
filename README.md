@@ -102,7 +102,7 @@ cd drama-multi-agent
 如果项目已经在本地，例如：
 
 ```powershell
-cd /d D:\1求职\1\drama-multi-agent（你自己的目录下）
+cd /d D:\1求职\1\drama-multi-agent
 ```
 
 ### 2. 创建并激活虚拟环境
@@ -184,7 +184,7 @@ API_PORT=8000
 PowerShell：
 
 ```powershell
-cd /d D:\1求职\1\drama-multi-agent（你自己的目录下）
+cd /d D:\1求职\1\drama-multi-agent
 .\.venv\Scripts\Activate.ps1
 $env:PYTHONPATH = "src"
 python -m uvicorn drama_agent.api:app --host 127.0.0.1 --port 8001
@@ -193,7 +193,7 @@ python -m uvicorn drama_agent.api:app --host 127.0.0.1 --port 8001
 CMD：
 
 ```cmd
-cd /d D:\1求职\1\drama-multi-agent（你自己的目录下）
+cd /d D:\1求职\1\drama-multi-agent
 .venv\Scripts\activate
 set PYTHONPATH=src
 python -m uvicorn drama_agent.api:app --host 127.0.0.1 --port 8001
@@ -243,10 +243,10 @@ drama-agent mcp
 2. 解释器选择：
 
 ```text
-D:\1求职\1\drama-multi-agent\.venv\Scripts\python.exe（你自己的目录下）
+D:\1求职\1\drama-multi-agent\.venv\Scripts\python.exe
 ```
 
-1. 新建 Python 运行配置：
+3. 新建 Python 运行配置：
 
 ```text
 Module name: uvicorn
@@ -380,24 +380,24 @@ GET  /v1/async/{task_id}
 
 ### 会话接口
 
-| Method | Path                                  | Description          |
-| ------ | ------------------------------------- | -------------------- |
-| GET    | `/v1/sessions`                        | 查询会话列表         |
-| GET    | `/v1/sessions/{session_id}`           | 查询单个会话         |
-| DELETE | `/v1/sessions/{session_id}`           | 删除会话             |
-| POST   | `/v1/sessions/{session_id}/writeback` | 将高分内容回写知识库 |
+| Method | Path | Description |
+| --- | --- | --- |
+| GET | `/v1/sessions` | 查询会话列表 |
+| GET | `/v1/sessions/{session_id}` | 查询单个会话 |
+| DELETE | `/v1/sessions/{session_id}` | 删除会话 |
+| POST | `/v1/sessions/{session_id}/writeback` | 将高分内容回写知识库 |
 
 ### 个人记忆库接口
 
-| Method | Path                     | Description          |
-| ------ | ------------------------ | -------------------- |
-| GET    | `/v1/memory`             | 查询个人记忆         |
-| POST   | `/v1/memory/save`        | 保存问答到个人记忆库 |
-| GET    | `/v1/memory/export`      | 导出记忆 JSON        |
-| POST   | `/v1/memory/import`      | 导入记忆 JSON        |
-| GET    | `/v1/memory/{memory_id}` | 获取单条记忆         |
-| PUT    | `/v1/memory/{memory_id}` | 更新单条记忆         |
-| DELETE | `/v1/memory/{memory_id}` | 删除单条记忆         |
+| Method | Path | Description |
+| --- | --- | --- |
+| GET | `/v1/memory` | 查询个人记忆 |
+| POST | `/v1/memory/save` | 保存问答到个人记忆库 |
+| GET | `/v1/memory/export` | 导出记忆 JSON |
+| POST | `/v1/memory/import` | 导入记忆 JSON |
+| GET | `/v1/memory/{memory_id}` | 获取单条记忆 |
+| PUT | `/v1/memory/{memory_id}` | 更新单条记忆 |
+| DELETE | `/v1/memory/{memory_id}` | 删除单条记忆 |
 
 ## MCP 工具
 

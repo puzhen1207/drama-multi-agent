@@ -1,0 +1,34 @@
+# 短剧多智能体内容生产系统（drama-multi-agent）
+#
+# 工作流调度：LangGraph StateGraph（graph.py）
+
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# 向量检索 + 中文 Embedding（推荐安装，显著提升检索与记忆召回质量）
+sentence-transformers>=2.5.0
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+
+# 数据建模
+pydantic>=2.6.0
+pydantic-settings>=2.1.0
+
+# 容错治理
+tenacity>=8.2.3
+
+# 工具
+python-dotenv>=1.0.0
+loguru>=0.7.2
+
+# Web
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+httpx>=0.27.0
+
+# 可选：本地 embedding（若不可用会自动降级为哈希向量）
+# sentence-transformers 已列入默认依赖
+
+# MCP Server（drama-agent mcp）
+# mcp>=1.2.0
+jieba>=0.42.1

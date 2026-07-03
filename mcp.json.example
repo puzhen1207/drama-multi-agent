@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "drama-agent": {
+      "command": "drama-agent",
+      "args": ["mcp"],
+      "env": {
+        "PYTHONPATH": "src"
+      }
+    }
+  }
+}
