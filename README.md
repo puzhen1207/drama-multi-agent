@@ -8,7 +8,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688)](https://fastapi.tiangolo.com/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-enabled-purple)](https://www.langchain.com/langgraph)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-[![CI](https://github.com/%3Cowner%3E/%3Crepo%3E/actions/workflows/ci.yml/badge.svg)](https://github.com/%3Cowner%3E/%3Crepo%3E/actions/workflows/ci.yml)
+[![CI](https://github.com/%3Cowner%3E/%3Crepo%3E/actions/workflows/ci.yml/badge.svg)](https://github.com/puzhen1207/drama-multi-agent)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/%3Cowner%3E/%3Crepo%3E/pulls)
 
 ------
