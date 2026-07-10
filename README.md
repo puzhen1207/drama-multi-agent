@@ -2,8 +2,6 @@
 
 > English: A multi-agent short-drama content production system built on **FastAPI + LangGraph**. It turns a creative brief into a structured task, retrieves reference materials, drafts & refines the script, and runs a two-track compliance audit — with session memory, a personal memory library, an MCP server, and a real-time web UI.
 
-> 💡 把下方 CI 徽标中的 `<owner>/<repo>` 替换为你自己的 GitHub 仓库路径即可。
-
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688)](https://fastapi.tiangolo.com/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-enabled-purple)](https://www.langchain.com/langgraph)
@@ -153,7 +151,7 @@ drama-multi-agent/
 ### 1. 获取项目
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/puzhen1207/drama-multi-agent
 cd drama-multi-agent
 ```
 
